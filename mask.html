@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body><p>
+<div class="full" height=20%>
+<div class="whole" width=3%>
+    <div class="imag"><img  border= 3 src="n99.jpg" width=10% height=30%  /></div>
+	<div class="desc">N95 MASK <br>Prize: Rs.239</div>
+	<div class="buy"><button onclick= "buy()" class="by" type="submit" id="n95">BUY</button></div> 
+</div>
+<div class="whole" width=5%>
+    <div class="imag"><img  border= 3 src="n95.jpg" width=10% height=30%  /></div>
+	<div class="desc">N99 MASK <br>Prize: Rs.369</div>
+    <div class="buy"><button onclick= "buy()" class="by" type="submit" id="n99">BUY</button></div> 
+
+</div>
+<div class="whole">
+    <div class="imag"><img  border= 3 src="9004gv.jpg" width=10% height=30%  /></div>
+	<div class="desc">9004gv MASK <br>Prize: Rs.339</div>
+    <div class="buy"><button onclick= "buy()" class="by" type="submit" id="9004v">BUY</button></div> 
+
+</div>
+<div class="whole">
+    <div class="imag"><img  border= 3 src="pm2.5.jpg" width=10% height=30%  /></div>
+	<div class="desc">pm2.5 MASK <br>Prize: Rs.439</div>
+    <div class="buy"><button onclick= "buy()" class="by" type="submit" id="pm2.5">BUY</button></div> 
+</div>
+<hr><br>
+<div class="footer">
+	<h4>Your cart:</h4>
+	Number of masks:
+	<input type="text" id="qty" value=0 name="qty">
+ Total price: <input type="text" id="price" value=0 name="price">
+
+</div>
+</div>
+    <script>
+     
+
+
+      /**var x = localStorage[x];
+      var displayData = x;
+      alert('Inserted Data' + x);**/
+      
+      var y=0;
+	function buy(){
+	
+y=document.getElementById("qty").value;
+	var z= ++y;
+  //y=z.value;
+  document.getElementById("qty").value=z;
+   var price=0;
+      var x = document.getElementsByClassName("by").id;
+      console.log(x);
+    //  var x=document.getElementById("")
+if(x[0]=="n95"){
+price=price+239;
+}
+else if(x=="n99"){
+  price+=369;
+}
+p=document.getElementById("price").value;
+document.getElementById("price").value=price;
+
+      //document.write(y);
+
+  //document.write(y++);
+	//alert("HI");
+
+		//y++;
+		console.log(z);
+		//document.getElementById("qty").value=y;
+        //localStorage.setItem( x, 5);
+        //	        window.location.href = "trialsub.html";
+
+	     }
+	           //localStorage.removeItem(x);
+
+</script>
+</body>
+</html> 
